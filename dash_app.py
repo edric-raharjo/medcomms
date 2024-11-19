@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 
 # Load the Data
-plot_df = pd.read_csv('plot_df.csv')
 plot_df_3d = pd.read_csv('plot_df_3d.csv')
 
 # First Plot
@@ -27,6 +26,7 @@ import pandas as pd
 
 # Initialize the Dash app
 app = Dash(__name__)
+server = app.server
 
 # List of dates
 dates = [
